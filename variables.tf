@@ -6,8 +6,8 @@ variable "machine_type" {
   default = "u3c.2x4"
 }
 
-variable "isolation" {
-  default = "public"
+variable "hardware" {
+  default = "shared"
 }
 
 variable "private_vlan_id" {
