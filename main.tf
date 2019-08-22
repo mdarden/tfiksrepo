@@ -2,7 +2,7 @@ provider "ibm" {
 region = "us-south"
 softlayer_api_key = "badb2f4db6b047463c00744bb2104fddf9b6886378a797caa43f1dd856922bb5"
 softlayer_username = "IBM1926963"
-bluemix_api_key = "oImKWxZqcPUIr7PvPotDhircM-4ozY50uBBXdDmZG5-A"
+ibmcloud_api_key = "oImKWxZqcPUIr7PvPotDhircM-4ozY50uBBXdDmZG5-A"
 }
 resource "ibm_container_cluster" "cluster" {
   name              = "${var.cluster_name}${random_id.name.hex}"
