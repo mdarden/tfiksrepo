@@ -10,7 +10,7 @@ resource "ibm_container_cluster" "cluster" {
   no_subnet         = true
   default_pool_size = 1
   machine_type      = "${var.machine_type}"
-  isolation         = "${var.isolation}"
+  hardware         = "${var.hardware}"
   public_vlan_id    = "${var.public_vlan_id}"
   private_vlan_id   = "${var.private_vlan_id}"
 }
